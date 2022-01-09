@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  height: 100vh;
+  width: 100%;
+}
+
+body header {
+  display: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin: auto;
+  padding: 10px 20px;
+  width: 100%;
+  color: #fff;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header ul {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body header ul a {
+  text-decoration: none;
+}
+
+body header ul a li {
+  list-style: none;
+  color: #ffbd35;
+}
+
+body footer {
+  padding: 20px;
+  text-align: center;
+  background: #888;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .home {
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 40px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  height: 80vh;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .home img {
+  margin-right: 10px;
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  min-width: 240px;
+  max-width: 40%;
+  height: 100%;
+  -webkit-box-shadow: 15px 30px 10px #ccc;
+          box-shadow: 15px 30px 10px #ccc;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container .home div {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.container .home div h2 {
+  font-size: 32px;
+}
+
+.container .home div h2 span {
+  display: block;
+  color: #502064;
+}
+
+.container .home div p {
+  color: #3fa796;
+  font-weight: 600;
+}
+
+.container .about {
+  margin: auto;
+  padding: 30px 5%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffaa00;
+  color: #222;
+}
+
+.container .about div {
+  padding: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .about div h3 {
+  padding-left: 60px;
+  font-size: 24px;
+}
+
+.container .about div h3 span {
+  color: #502064;
+  font-size: 32px;
+}
+
+.container .about div p {
+  padding: 10px;
+  padding-left: 80px;
+  font-size: 20px;
+}
+
+.container .about div .aboutInfo {
+  margin: auto;
+  width: 96%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .about div .aboutInfo .skills {
+  width: 46%;
+  padding: 10px;
+  padding-bottom: 40px;
+  -webkit-box-shadow: 2px 2px 4px 4px #444;
+          box-shadow: 2px 2px 4px 4px #444;
+}
+
+.container .about div .aboutInfo .skills h3 {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: #222;
+  font-size: 22px;
+  direction: ltr;
+}
+
+.container .about div .aboutInfo .skills ul {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.container .about div .aboutInfo .skills ul li {
+  padding-top: 4px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.container .about div .aboutInfo .hobbies {
+  padding-bottom: 40px;
+  width: 46%;
+  -webkit-box-shadow: 2px 2px 4px 4px #444;
+          box-shadow: 2px 2px 4px 4px #444;
+}
+
+.container .about div .aboutInfo .hobbies h3 {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  direction: ltr;
+}
+
+.container .about div .aboutInfo .hobbies ul {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.container .about div .aboutInfo .hobbies ul li {
+  padding-top: 4px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.container .contact {
+  padding: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  color: #3fa796;
+}
+
+.container .contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .contact div a {
+  margin: 10px;
+}
+
+.container .contact div a img {
+  width: 40px;
+}
+
+@media screen and (max-width: 920) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .home {
+    margin-top: 60px;
+    padding: 40px;
+    padding-bottom: 80px;
+    min-height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .home img {
+    width: 40%;
+    height: 100%;
+    -webkit-box-shadow: 15px 30px 10px #ccc;
+            box-shadow: 15px 30px 10px #ccc;
+  }
+  .container .home div {
+    padding: 20px;
+  }
+  .container .home div h2 {
+    font-size: 32px;
+  }
+  .container .home div h2 span {
+    display: block;
+    color: #502064;
+  }
+  .container .home div p {
+    color: #3fa796;
+  }
+  .container .about {
+    padding: 20px;
+  }
+  .container .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .home {
+    margin-top: 60px;
+    padding: 40px;
+    padding-bottom: 80px;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .home img {
+    width: 40%;
+    height: 100%;
+    -webkit-box-shadow: 15px 30px 10px #ccc;
+            box-shadow: 15px 30px 10px #ccc;
+  }
+  .container .home div {
+    padding: 20px;
+  }
+  .container .home div h2 {
+    font-size: 32px;
+  }
+  .container .home div h2 span {
+    display: block;
+    color: #502064;
+  }
+  .container .home div p {
+    color: #3fa796;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    display: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: auto;
+    padding: 10px 20px;
+    width: 100%;
+    color: #fff;
+    background: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header ul {
+    display: none;
+    visibility: hidden;
+  }
+  .container .home {
+    padding-top: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .home img {
+    width: 80%;
+    height: 40vh;
+  }
+  .container .home div {
+    padding: 20px;
+  }
+  .container .home div h2 {
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+  .container .home div h2 span {
+    display: block;
+    color: #502064;
+  }
+  .container .home div p {
+    font-size: 16px;
+    font-weight: 440;
+  }
+  .container .about {
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .container .about div .aboutInfo {
+    width: 96%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container .about div .aboutInfo .skills {
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 2px 2px 4px 4px #444;
+            box-shadow: 2px 2px 4px 4px #444;
+  }
+  .container .about div .aboutInfo .skills h3 {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    color: #222;
+    font-size: 20px;
+    direction: ltr;
+  }
+  .container .about div .aboutInfo .skills ul {
+    margin: 0 auto;
+    width: 40%;
+  }
+  .container .about div .aboutInfo .skills ul li {
+    padding-top: 4px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  .container .about div .aboutInfo .hobbies {
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 40px;
+    -webkit-box-shadow: 2px 2px 4px 4px #444;
+            box-shadow: 2px 2px 4px 4px #444;
+  }
+  .container .about div .aboutInfo .hobbies h3 {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    direction: ltr;
+    font-size: 20px;
+  }
+  .container .about div .aboutInfo .hobbies ul {
+    margin: 0 auto;
+    width: 40%;
+  }
+  .container .about div .aboutInfo .hobbies ul li {
+    padding-top: 4px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

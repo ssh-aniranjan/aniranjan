@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    header {
+        display: none;
+        position: sticky;
+        top: 0;
+        left: 0;
+        margin: auto;
+        padding: 10px 20px;
+        width: 100%;
+        color: #fff;
+        background: #000;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            width: 40%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            a {
+                text-decoration: none;
+                li {
+                    list-style: none;
+                    color: #ffbd35;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        background: #888;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    .home {
+        margin: 0 auto;
+        margin-top: 60px;
+        padding: 40px;
+        padding-top: 60px;
+        padding-bottom: 80px;
+        height: 80vh;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            margin-right: 10px;
+            flex-grow: 4;
+            flex-shrink: 2;
+            min-width: 240px;
+            max-width: 40%;
+            height: 100%;
+            box-shadow: 15px 30px 10px #ccc;
+            align-self: center;
+        }
+
+        div {
+            flex-shrink: 1;
+            flex-grow: 1;
+            padding: 20px;
+            padding-left: 40px;
+            h2 {
+                font-size: 32px;
+                span {
+                    display: block;
+                    color: #502064;
+                }
+            }
+
+            p {
+                color: #3fa796;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .about {
+        margin: auto;
+        padding: 30px 5%;
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #ffaa00;
+        color: #222;
+        div {
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            h3{
+                padding-left: 60px;
+                font-size: 24px;
+                span{
+                    color: #502064;
+                    font-size: 32px;
+                }
+            }
+            p{
+                padding: 10px;
+                padding-left: 80px;
+                font-size: 20px;
+            }
+            .aboutInfo {
+                margin: auto;
+                width: 96%;
+                display: flex;
+                flex-flow: row;
+                justify-content: space-around;
+
+
+                .skills{
+                    width: 46%;
+                    padding: 10px;
+                    padding-bottom: 40px;
+                    box-shadow: 2px 2px 4px 4px #444;
+
+                    h3{
+                        height: max-content;
+                        color: #222;
+                        font-size: 22px;
+                        direction: ltr;
+                    }
+                    ul{                        
+                        margin: 0 auto; 
+                        width: 40%;
+                        // padding: 20px;
+                        li{
+                            padding-top: 4px;
+                            color: #fff;
+                            font-size: 20px;
+                            font-weight: 600;
+                            letter-spacing: 0.3px;
+                        }
+                    }
+                }
+
+                
+                .hobbies{
+                    padding-bottom: 40px;
+                    width: 46%;
+                    box-shadow: 2px 2px 4px 4px #444;
+
+                    h3{
+                        height: max-content;
+                        direction: ltr;
+                    }
+                    ul{             
+                        margin: 0 auto; 
+                        width: 40%;
+                        li{
+                            padding-top: 4px;
+                            color: #fff;
+                            font-size: 20px;
+                            font-weight: 600;
+                            letter-spacing: 0.3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        color: #3fa796;
+
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            a{
+                margin: 10px;
+                img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+//medium pcs
+@media screen and (max-width: 920) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        .home {
+            margin-top: 60px;
+            padding: 40px;
+            padding-bottom: 80px;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            img {
+                // margin-right: 10px;
+                width: 40%;
+                height: 100%;
+                box-shadow: 15px 30px 10px #ccc;
+            }
+
+            div {
+                padding: 20px;
+                // padding-left: 40px;
+                h2 {
+                    font-size: 32px;
+                    span {
+                        display: block;
+                        color: #502064;
+                    }
+                }
+
+                p {
+                    color: #3fa796;
+                }
+            }
+        }
+
+        .about {
+            padding: 20px;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+//tablets and portrait
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        .home {
+            margin-top: 60px;
+            padding: 40px;
+            padding-bottom: 80px;
+            height: 80vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            img {
+                // margin-right: 10px;
+                width: 40%;
+                height: 100%;
+                box-shadow: 15px 30px 10px #ccc;
+            }
+
+            div {
+                padding: 20px;
+                // padding-left: 40px;
+                h2 {
+                    font-size: 32px;
+                    span {
+                        display: block;
+                        color: #502064;
+                    }
+                }
+
+                p {
+                    color: #3fa796;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+}
+
+//mobile screens
+@media screen and (max-width: 480px) {
+    header {
+        display: none;
+        position: sticky;
+        top: 0;
+        left: 0;
+        margin: auto;
+        padding: 10px 20px;
+        width: 100%;
+        color: #fff;
+        background: #000;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    .container {
+        .home {
+            padding-top: auto;
+            flex-direction: column;
+            img {
+                width: 80%;
+                height: 40vh;
+            }
+            div {
+                padding: 20px;
+                // padding-left: 40px;
+                h2 {
+                    font-size: 24px;
+                    text-transform: capitalize;
+                    span {
+                        display: block;
+                        color: #502064;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 440;
+                }
+            }
+        }
+
+        .about {
+            margin: auto;
+            flex-direction: column;
+            text-align: left;
+
+            div {
+                
+                .aboutInfo {
+                    width: 96%;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: space-around;
+    
+    
+                    .skills{
+                        
+                        width: 100%;
+                        padding: 10px;
+                        padding-bottom: 40px;
+                        margin-bottom: 40px;
+                        box-shadow: 2px 2px 4px 4px #444;
+                        h3{
+                            height: max-content;
+                            color: #222;
+                            font-size: 20px;
+                            direction: ltr;
+                        }
+                        ul{                        
+                            margin: 0 auto; 
+                            width: 40%;
+                            // padding: 20px;
+                            li{
+                                padding-top: 4px;
+                                color: #fff;
+                                font-size: 20px;
+                                font-weight: 600;
+                                letter-spacing: 0.3px;
+                            }
+                        }
+                    }
+    
+                    
+                    .hobbies{
+                        width: 100%;
+                        padding: 10px;
+                        padding-bottom: 40px;
+                        box-shadow: 2px 2px 4px 4px #444;
+
+                        h3{
+                            height: max-content;
+                            direction: ltr;
+                            font-size: 20px;
+                        }
+                        ul{             
+                            margin: 0 auto; 
+                            width: 40%;
+                            li{
+                                padding-top: 4px;
+                                color: #fff;
+                                font-size: 20px;
+                                font-weight: 600;
+                                letter-spacing: 0.3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
