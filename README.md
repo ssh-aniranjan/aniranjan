@@ -9,7 +9,7 @@ I'm a passionate developer with a love for coding and exploring new technologies
 - 👯 I’m looking to collaborate on exciting projects that involve web development and AI
 - 🤔 I’m looking for help with improving my knowledge in cloud computing
 - 💬 Ask me about JavaScript, Python, or anything tech-related
-- 📫 How to reach me: [Email me](mailto:ssh.aniranjan@example.com)
+- 📫 How to reach me: [Email me](mailto:ssh.aniranjan2001@gmail.com)
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I love playing chess and solving puzzles
 
